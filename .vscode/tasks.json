@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    {
+      "label": "PrepareDebugTask",
+      "type": "shell",
+      "command": "ae function prepare-debug",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "options": {
+        "env": {
+          "PATH": "${env:PATH}"
+        }
+      }
+    }
+  ]
+}

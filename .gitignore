@@ -1,0 +1,15 @@
+node_modules
+
+mini-program
+
+.DS_Store
+.yarn
+.kldx
+.build
+.idea
+.ae
+
+yarn-error.log*
+*-debug.log
+
+output

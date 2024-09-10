@@ -1,0 +1,11 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "functions/nodejs/**/index.meta.json",
+        "functions/golang/**/index.meta.json"
+      ],
+      "url": ".ae/typings/cloud_function/index.meta.schema.json"
+    }
+  ]
+}
