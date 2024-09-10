@@ -1,0 +1,16 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg4a4ykf2cy",
+  "apiName": "testFunc",
+  "label": {
+    "zh_CN": "test Func",
+    "en_US": "test Func"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": false,
+  "input": [],
+  "output": []
+}
