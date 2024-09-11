@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "es2020"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "es2018",
+    "paths": {
+      "react": ["./node_modules/@types/react"]
+    }
+  },
+  "files": ["../.kldx/typings/component/index.d.ts", "../.ae/typings/component/index.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}

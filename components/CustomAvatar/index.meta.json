@@ -1,0 +1,15 @@
+{
+  "apiName": "CustomAvatar",
+  "label": {
+    "zh_CN": "Custom Avatar",
+    "en_US": "Custom Avatar"
+  },
+  "icon": "./icon.svg",
+  "cover": "./cover.svg",
+  "description": {
+    "zh_CN": "Custom Avatar 组件描述",
+    "en_US": "Custom Avatar component description"
+  },
+  "device": ["pc","mobile"],
+  "protocolVersion": "3.0"
+}

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "@byted-apaas/client-sdk": "1.13.0",
+    "antd": "^5.20.6",
+    "react": "^17"
+  },
+  "devDependencies": {
+    "@types/react": "^17"
+  }
+}
