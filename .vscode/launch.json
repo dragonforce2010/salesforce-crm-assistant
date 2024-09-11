@@ -10,6 +10,7 @@
         "${workspaceFolder}/functions/nodejs//node_modules/**",
         "${workspaceFolder}/.ae/**"
       ],
+      "runtimeExecutable": "/Users/bytedance/.nvm/versions/node/v18.20.4/bin/node",
       "preLaunchTask": "PrepareDebugTask",
       "program": "${workspaceFolder}/.ae/functionsFramework/nodejs/launch.js",
       "env": {
