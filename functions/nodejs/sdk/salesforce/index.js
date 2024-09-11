@@ -1,7 +1,7 @@
 const { Client } = require('./client')
 const jsforce = require('jsforce')
 
-const salesforceClient = async(logger, context) => {
+const salesforceClient = async(context, logger) => {
   const conn = new jsforce.Connection({
     oauth2: {
       clientId: '3MVG9k02hQhyUgQDLqXDVQVzvg.ns2L3OfrYnfLtQNbOlzJSpVGMoDUUSCduVVRELL2RC4f8lBM8BpIs27Lb1',
@@ -12,7 +12,7 @@ const salesforceClient = async(logger, context) => {
     refreshFn: async (conn, callback) => {
       try{
         const userInfo = await conn.login('michael.zhang@apaas.com', 'apaastraining920')
-        logger.info(`token refreshed using user account ${userInfo}`)
+        logger.info(`token refreshed using user account ${JSON.stringify(userInfo)}`)
         callback(null, conn.accessToken)
       } catch(error) {
         logger.error('error occurred! error = ', error)

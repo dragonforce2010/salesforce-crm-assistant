@@ -1,0 +1,16 @@
+{
+  "params": {
+    "options": {
+      "condition": {
+        "Name": {
+          "$like": "%Rogers%"
+        }
+      },
+      "fields": ["Id", "Name"], 
+      "limit": 10,
+      "skip": 0, 
+      "sortBy": "-Name"
+    }
+  },
+  "context": {}
+}

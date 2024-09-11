@@ -6,7 +6,7 @@ class Client {
     this.conn = conn
   }
 
-  async find(objectApiName, options) {
+  async find(objectApiName, options = {}) {
     let { fields, limit, skip, sortBy, condition = {}, pagination} = options
     const result = await this.conn.sobject(objectApiName)
       .find(condition, fields)
