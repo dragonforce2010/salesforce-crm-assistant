@@ -31,7 +31,7 @@ const salesforceClient = async(context, logger) => {
       }
     }
   })
-  const client = new Client(conn)
+  const client = new Client(context, logger, conn)
   return client
 }
 

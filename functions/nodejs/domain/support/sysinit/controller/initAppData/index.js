@@ -2,7 +2,7 @@
 // 如安装 linq 包后就可以引入并使用这个包
 // const linq = require("linq");
 
-const { salesforceClient } = require("../../../sdk/salesforce");
+const { InitService } = require("../../service/metadata/initService")
 
 /**
  * @param {Params}  params     自定义参数
@@ -16,8 +16,7 @@ module.exports = async function (params, context, logger) {
   // logger.info(`${new Date()} 函数开始执行`);
 
   // 在这里补充业务代码
-  const { options } = params;
-  const client = await salesforceClient(context, logger)
-  const result = await client.find("Account", options)
-  return result
+  const initService = new InitService(context, logger)
+  await initService.init()
+  await initService.initAppData()
 }

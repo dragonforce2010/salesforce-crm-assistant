@@ -1,9 +1,9 @@
 {
-  "apiID": "salesforceCrmAssistant__c__function_aadg4ejvbwehw",
-  "apiName": "queryLead",
+  "apiID": "salesforceCrmAssistant__c__function_aadg4kr5unmgu",
+  "apiName": "initMetaData",
   "label": {
-    "zh_CN": "query Lead",
-    "en_US": "query Lead"
+    "zh_CN": "init Meta Data",
+    "en_US": "init Meta Data"
   },
   "description": {
     "zh_CN": "自定义函数",

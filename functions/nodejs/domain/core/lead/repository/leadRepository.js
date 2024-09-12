@@ -1,5 +1,4 @@
-const { salesforceClient } = require("../../../sdk/salesforce")
-const { Client } = require("../../../sdk/salesforce/client")
+const { salesforceClient } = require("../../../../sdk/salesforce")
 
 class LeadRepository {
   tableName = 'Lead'
