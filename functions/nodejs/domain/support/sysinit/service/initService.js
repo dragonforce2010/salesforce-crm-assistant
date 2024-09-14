@@ -17,7 +17,11 @@ class InitService {
   } 
   
   async initAppData() {
+    await this.initializer.createAllObjectData() 
+  }
 
+  async deleteAllData() {
+    await this.initializer.deleteAllObjectData()
   }
 }
 

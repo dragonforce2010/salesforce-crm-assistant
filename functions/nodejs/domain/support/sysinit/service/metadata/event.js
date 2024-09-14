@@ -2,12 +2,11 @@ const Event = {
   objectName: "Event",
   comment: "跟进记录2",
   systable: true,
-  mockEnable: true,
+  allowDelete: true,
   pk: {
-    WhatId: [
-      { when: { Type: "account" }, table: "Account" },
-      { when: { Type: "opportunity" }, table: "Opportunity" },
-    ],
+    WhatId:{ 
+      objectApiName: "Account" 
+    },
   },
   //假数据中的下拉选项
   mockDataSelect: {},

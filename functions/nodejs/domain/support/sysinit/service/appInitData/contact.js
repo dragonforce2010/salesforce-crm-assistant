@@ -1,4 +1,4 @@
-const ContactInitData = [
+const Contact = [
   {
     "LastName": "王",
     "FirstName": "市磊",
@@ -246,5 +246,5 @@ const ContactInitData = [
 ]
 
 module.exports = {
-  ContactInitData
+  Contact
 }

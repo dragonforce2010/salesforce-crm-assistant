@@ -4,7 +4,6 @@
 
 const { InitService } = require("../../service/initService")
 
-
 /**
  * @param {Params}  params     自定义参数
  * @param {Context} context    上下文参数，可通过此参数下钻获取上下文变量信息等
@@ -19,5 +18,5 @@ module.exports = async function (params, context, logger) {
   // 在这里补充业务代码
   const initService = new InitService(context, logger)
   await initService.init()
-  await initService.initAppData()
+  await initService.deleteAllData()
 }

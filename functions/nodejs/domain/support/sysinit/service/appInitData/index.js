@@ -1,15 +1,15 @@
-const { AccountInitData } = require("./account")
-const { ContactInitData } = require("./contact")
-const { EventInitData } = require("./event")
-const { LeadInitData } = require("./lead")
-const { OpportunityInitData } = require("./opportunity")
+const { Account } = require("./account")
+const { Contact } = require("./contact")
+const { Event } = require("./event")
+const { Lead } = require("./lead")
+const { Opportunity } = require("./opportunity")
 
 const appInitData = {
-  LeadInitData,
-  AccountInitData,
-  OpportunityInitData,
-  ContactInitData,
-  EventInitData
+  Lead,
+  Account,
+  Opportunity,
+  Contact,
+  Event
 }
 
 module.exports = {

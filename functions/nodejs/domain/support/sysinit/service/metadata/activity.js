@@ -1,6 +1,7 @@
 const Activity = {
   objectName: "Activity",
   comment: "跟进记录-只建表不插入数据",
+  allowDelete: false,
   //假数据中的下拉选项
   mockDataSelect: {},
   customizedFields: [

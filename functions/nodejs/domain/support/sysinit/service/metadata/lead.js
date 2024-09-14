@@ -1,9 +1,11 @@
 const Lead = {
   objectName: "Lead",
   comment: "线索表",
+  allowDelete: true,
   pk: {
-    AccountId__c: [{ table: "Account" }],
-    // Opportunity__c:[{table:"Opportunity"}],
+    AccountId__c: { 
+      objectApiName: "Account" 
+    },
   },
   //假数据中的下拉选项
   mockDataSelect: {

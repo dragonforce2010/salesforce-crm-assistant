@@ -1,8 +1,11 @@
 const Opportunity = {
   objectName: "Opportunity",
   comment: "商机",
+  allowDelete: true,
   pk: {
-    AccountId: [{ table: "Account" }],
+    AccountId: { 
+      objectApiName: "Account" 
+    },
   },
   //假数据中的下拉选项
   mockDataSelect: {},

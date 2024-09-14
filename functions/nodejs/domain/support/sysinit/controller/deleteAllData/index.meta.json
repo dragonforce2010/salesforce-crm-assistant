@@ -1,0 +1,16 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg4v3uvfebu",
+  "apiName": "deleteAllData",
+  "label": {
+    "zh_CN": "delete All Data",
+    "en_US": "delete All Data"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": false,
+  "input": [],
+  "output": []
+}

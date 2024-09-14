@@ -1,4 +1,4 @@
-const OpportunityInitData = [
+const Opportunity = [
   {
       "IsPrivate": false,
       "Name": "星汉科技公司",
@@ -10,7 +10,7 @@ const OpportunityInitData = [
       "Type": "Existing Customer",
       "NextStep": "Project Proposal",
       "LeadSource": "Web",
-      "LastFollowupDate__c": NOW_DATE,
+      "LastFollowupDate__c": "NOW_DATE",
       "FollowupCountRecently__c": 2,
       "LostReason__c": "价格竞争"
   },
@@ -25,7 +25,7 @@ const OpportunityInitData = [
       "Type": "New Customer",
       "NextStep": "Final Review",
       "LeadSource": "Referral",
-      "LastFollowupDate__c": NOW_DATE,
+      "LastFollowupDate__c": "NOW_DATE",
       "FollowupCountRecently__c": 3,
       "LostReason__c": "服务质量问题"
   },
@@ -40,7 +40,7 @@ const OpportunityInitData = [
       "Type": "Existing Customer",
       "NextStep": "Project Implementation",
       "LeadSource": "Partner",
-      "LastFollowupDate__c": NOW_DATE,
+      "LastFollowupDate__c": "NOW_DATE",
       "FollowupCountRecently__c": 1,
       "LostReason__c": "合作伙伴关系问题"
   },
@@ -55,7 +55,7 @@ const OpportunityInitData = [
       "Type": "New Customer",
       "NextStep": "Re-negotiation",
       "LeadSource": "Trade Show",
-      "LastFollowupDate__c":NOW_DATE,
+      "LastFollowupDate__c":"NOW_DATE",
       "FollowupCountRecently__c": 3,
       "LostReason__c": "产品性能不满足要求"
   },
@@ -70,7 +70,7 @@ const OpportunityInitData = [
       "Type": "Existing Customer",
       "NextStep": "Contract Signing",
       "LeadSource": "Internal Referral",
-      "LastFollowupDate__c": NOW_DATE,
+      "LastFollowupDate__c": "NOW_DATE",
       "FollowupCountRecently__c": 2,
       "LostReason__c": "交付时间问题"
   },
@@ -85,7 +85,7 @@ const OpportunityInitData = [
       "Type": "New Customer",
       "NextStep": "Project Implementation",
       "LeadSource": "Webinar",
-      "LastFollowupDate__c": NOW_DATE,
+      "LastFollowupDate__c": "NOW_DATE",
       "FollowupCountRecently__c": 1,
       "LostReason__c": "合作伙伴关系问题"
   },
@@ -100,7 +100,7 @@ const OpportunityInitData = [
       "Type": "Existing Customer",
       "NextStep": "Re-negotiation",
       "LeadSource": "Email",
-      "LastFollowupDate__c": NOW_DATE,
+      "LastFollowupDate__c": "NOW_DATE",
       "FollowupCountRecently__c": 3,
       "LostReason__c": "价格竞争"
   },
@@ -115,12 +115,12 @@ const OpportunityInitData = [
       "Type": "New Customer",
       "NextStep": "Contract Signing",
       "LeadSource": "Partner",
-      "LastFollowupDate__c": NOW_DATE,
+      "LastFollowupDate__c": "NOW_DATE",
       "FollowupCountRecently__c": 2,
       "LostReason__c": "服务质量问题"
   }
 ]
 
 module.exports = {
-  OpportunityInitData
+  Opportunity
 }

@@ -1,7 +1,7 @@
 const Account = {
   objectName: "Account",
   comment: "客户",
-  mockEnable: true,
+  allowDelete: true,
   //假数据中的下拉选项
   mockDataSelect: {
     Type: ["ce", "soe", "pe", "jv", "fe", "di", "fi"],

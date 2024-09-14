@@ -1,4 +1,4 @@
-const LeadInitData = [
+const Lead = [
   {
       "LastName": "王",
       "FirstName": "春梅",
@@ -150,5 +150,5 @@ const LeadInitData = [
 ]
 
 module.exports = {
-  LeadInitData
+  Lead
 }

@@ -4,6 +4,7 @@
     "@byted-apaas/faas-sdk-node": "1.0.11",
     "@byted-apaas/server-common-node": "2.0.4",
     "@byted-apaas/server-sdk-node": "1.1.14",
-    "jsforce": "^3.4.1"
+    "jsforce": "^3.4.1",
+    "moment": "^2.30.1"
   }
 }
