@@ -1,0 +1,23 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg5aa4eh2ki",
+  "apiName": "updateLead",
+  "label": {
+    "zh_CN": "更新线索",
+    "en_US": "更新线索"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [
+    {
+      "key": "data",
+      "type": "JSON",
+      "label": "更新数据",
+      "required": true
+    }
+  ],
+  "output": []
+}

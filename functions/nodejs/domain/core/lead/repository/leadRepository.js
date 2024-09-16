@@ -14,6 +14,10 @@ class LeadRepository {
   query = async (options) => {
     return this.client.find(this.tableName, options)
   }
+
+  update = async(data) => {
+    return this.client.update(this.tableName, data)
+  }
 }
 
 module.exports = {

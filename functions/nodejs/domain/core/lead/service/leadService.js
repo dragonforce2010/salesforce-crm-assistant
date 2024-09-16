@@ -14,6 +14,10 @@ class LeadService  {
   query = async(options) => {
     return this.leadRepository.query(options)
   }
+
+  update = async(data) => {
+    return this.leadRepository.update(data)
+  }
 }
 
 module.exports = {
