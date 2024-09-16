@@ -12,6 +12,14 @@
   "isPublicAPI": false,
   "frontendSDKInvokable": true,
   "longTaskMode": false,
-  "input": [],
+  "input": [
+    {
+      "key": "options",
+      "description": "",
+      "label": "查询选项",
+      "type": "JSON",
+      "required": true
+    }
+  ],
   "output": []
 }

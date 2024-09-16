@@ -1,0 +1,9 @@
+{
+  "params": {
+    "action": "picklistMetaQuery",
+    "data": {
+      "objectApiName": "Lead"
+    }
+  },
+  "context": {}
+}

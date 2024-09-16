@@ -174,6 +174,17 @@ class Client {
       return null;
     }
   }
+
+  async getPicklistFieldsMetadata(objectApiName) {
+    const meta = await this.conn.sobject(objectApiName).describe()
+    const result = {}
+    for(let field of meta.fields) {
+      if(field.picklistValues && field.picklistValues.length > 0) {
+        result[field.name] = field.picklistValues
+      }
+    }
+    return result
+  }
 }
 
 module.exports = {
