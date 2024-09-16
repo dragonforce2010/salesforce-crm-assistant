@@ -1,4 +1,5 @@
 const jsforce = require("jsforce");
+const { RandomColor } = require('../../utils/randomColor')
 
 class Client {
   conn = new jsforce.Connection();
@@ -20,10 +21,11 @@ class Client {
         .execute();
 
       const fetchTotalPromise = this.conn.sobject(objectApiName).count(condition);
-      const [data, total] = await Promise.all([fetchDataPromise, fetchTotalPromise]);
+      const fetchPicklistFieldsMetaInfoPromise = this.getPicklistFieldsMetadata(objectApiName);
+      const [data, total, meta] = await Promise.all([fetchDataPromise, fetchTotalPromise, fetchPicklistFieldsMetaInfoPromise]);
 
       return {
-        data, total
+        data, total, meta
       };
     } catch (error) {
       this.logger.error("find error", error);
@@ -180,7 +182,12 @@ class Client {
     const result = {}
     for(let field of meta.fields) {
       if(field.picklistValues && field.picklistValues.length > 0) {
-        result[field.name] = field.picklistValues
+        result[field.name] = field.picklistValues.map(p => {
+          return {
+            ...p,
+            color: RandomColor.getColor(p.value)
+          }
+        })
       }
     }
     return result

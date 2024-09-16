@@ -8,7 +8,10 @@ const Opportunity = {
     },
   },
   //假数据中的下拉选项
-  mockDataSelect: {},
+  mockDataSelect: {
+    StageName: ["Prospecting", "Qualification", "Needs Analysis", "Value Proposition", "Id. Decision Makers", "Perception Analysis", "Proposal/Price Quote", "Negotiation/Review", "Closed Won", "Closed Lost"],
+    Type: ["Existing Customer - Upgrade", "Existing Customer - Replacement", "Existing Customer - Downgrade", "New Customer"]
+  },
   customizedFields: [
     {
       fullName: "FollowupCountRecently__c",

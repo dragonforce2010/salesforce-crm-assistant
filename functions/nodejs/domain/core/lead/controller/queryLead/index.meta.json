@@ -2,8 +2,8 @@
   "apiID": "salesforceCrmAssistant__c__function_aadg4ejvbwehw",
   "apiName": "queryLead",
   "label": {
-    "zh_CN": "query Lead",
-    "en_US": "query Lead"
+    "zh_CN": "线索查询",
+    "en_US": "线索查询"
   },
   "description": {
     "zh_CN": "自定义函数",

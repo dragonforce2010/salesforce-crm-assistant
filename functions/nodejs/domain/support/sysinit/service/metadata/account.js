@@ -4,16 +4,9 @@ const Account = {
   allowDelete: true,
   //假数据中的下拉选项
   mockDataSelect: {
-    Type: ["ce", "soe", "pe", "jv", "fe", "di", "fi"],
-    Industry: [
-      "finance",
-      "retail",
-      "medical_care",
-      "internet",
-      "manufacturing",
-      "others",
-    ],
-    Rating: ["normal", "important", "extremelyImportant"],
+    Type: ["Prospect", "Customer - Direct", "Customer - Channel", "Channel Partner / Reseller", "Installation Partner", "Technology Partner", "Other"],
+    Industry: ["Agriculture", "Banking", "Chemicals", "Education", "Finance"],
+    Rating: ["Hot", "Warm", "Cold"],
   },
   customizedFields: [
     {

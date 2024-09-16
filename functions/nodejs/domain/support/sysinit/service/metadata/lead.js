@@ -9,8 +9,10 @@ const Lead = {
   },
   //假数据中的下拉选项
   mockDataSelect: {
-    Rating: ["normal", "important", "extremelyImportant"],
-    LeadSource: ["marketingCampaign", "productLaunchEvent", "newMedia"],
+    Rating: ["Hot", "Warm", "Cold"],
+    LeadSource: ["Web", "Phone Inquiry", "Partner Referral"],
+    Industry: ["Agriculture", "Banking", "Chemicals", "Education", "Finance"],
+    Status: ["Open - Not Contacted", "Working - Contacted", "Closed - Converted", "Closed - Not Converted"]
   },
   customizedFields: [
       {
@@ -42,7 +44,15 @@ const Lead = {
         unique: false,
       },
   ],
-  grantFields: [],
+  grantFields: [{
+    fullName: 'Rating'
+  },{
+    fullName: 'LeadSource'
+  }, {
+    fullName: 'Industry'
+  }, {
+    fullName: 'Status'
+  }],
 }
 
 module.exports = {
