@@ -1,0 +1,22 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg4f2l25wcw",
+  "apiName": "queryAccount",
+  "label": {
+    "zh_CN": "客户服务-查询客户",
+    "en_US": "客户服务-查询客户"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [ {
+    "key": "options",
+    "description": "",
+    "label": "查询选项",
+    "type": "JSON",
+    "required": true
+  }],
+  "output": []
+}
