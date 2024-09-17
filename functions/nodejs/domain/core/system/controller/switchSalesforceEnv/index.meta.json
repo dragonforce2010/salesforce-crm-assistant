@@ -1,0 +1,21 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg5c4k6pmby",
+  "apiName": "switchSalesforceEnv",
+  "label": {
+    "zh_CN": "切换salesforce环境",
+    "en_US": "切换salesforce环境"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [{
+    "key": "envId",
+    "type": "Text",
+    "label": "环境id",
+    "required": true
+  }],
+  "output": []
+}
