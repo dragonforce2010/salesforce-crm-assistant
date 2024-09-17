@@ -1,0 +1,16 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg5dtebtgcw",
+  "apiName": "fetchSalesforceApiUseage",
+  "label": {
+    "zh_CN": "salesforce环境ApiQuota查询",
+    "en_US": "salesforce环境ApiQuota查询"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [],
+  "output": []
+}
