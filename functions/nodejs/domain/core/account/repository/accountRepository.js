@@ -1,22 +1,9 @@
 const { salesforceClient } = require("../../../../sdk/salesforce")
+const { BaseRepository } = require("../../common/repository/BaseRepository")
 
-class AccountRepository {
-  tableName = 'Account'
+class AccountRepository extends BaseRepository{
   constructor(context, logger) {
-    this.context = context
-    this.logger = logger
-  }
-
-  init = async () => {
-    this.client = await salesforceClient(this.context, this.logger)
-  }
-
-  query = async (options) => {
-    return this.client.find(this.tableName, options)
-  }
-
-  update = async(data) => {
-    return this.client.update(this.tableName, data)
+    super(context, logger, 'Account')
   }
 }
 

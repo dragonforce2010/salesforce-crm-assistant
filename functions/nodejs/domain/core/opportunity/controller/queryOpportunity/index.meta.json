@@ -1,0 +1,21 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg5jayst4eg",
+  "apiName": "queryOpportunity",
+  "label": {
+    "zh_CN": "商机服务-查询商机",
+    "en_US": "商机服务-查询商机"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [{
+    "key": "options",
+    "type": "JSON",
+    "label": "查询选项",
+    "required": true
+  }],
+  "output": []
+}

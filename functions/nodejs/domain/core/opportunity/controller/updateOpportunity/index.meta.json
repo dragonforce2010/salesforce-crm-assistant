@@ -1,0 +1,21 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg5javx5kms",
+  "apiName": "updateOpportunity",
+  "label": {
+    "zh_CN": "商机服务-更新商机",
+    "en_US": "商机服务-更新商机"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [{
+    "key": "data",
+    "type": "JSON",
+    "label": "更新数据",
+    "required": true
+  }],
+  "output": []
+}

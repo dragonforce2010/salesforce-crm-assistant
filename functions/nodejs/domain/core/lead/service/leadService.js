@@ -1,22 +1,9 @@
+const { BaseService } = require("../../common/service/BaseService")
 const { LeadRepository } = require("../repository/leadRepository")
 
-class LeadService  {
+class LeadService extends BaseService{
   constructor(context, logger) {
-    this.context = context
-    this.logger = logger
-    this.leadRepository = new LeadRepository(context, logger)
-  }
-
-  init = async() => {
-    await this.leadRepository.init()
-  }
-
-  query = async(options) => {
-    return this.leadRepository.query(options)
-  }
-
-  update = async(data) => {
-    return this.leadRepository.update(data)
+    super(context, logger, new LeadRepository(context, logger))
   }
 }
 

@@ -1,22 +1,9 @@
+const { BaseService } = require("../../common/service/BaseService")
 const { AccountRepository } = require("../repository/accountRepository")
 
-class AccountService  {
+class AccountService extends BaseService {
   constructor(context, logger) {
-    this.context = context
-    this.logger = logger
-    this.accountRepository = new AccountRepository(context, logger)
-  }
-
-  init = async() => {
-    await this.accountRepository.init()
-  }
-
-  query = async(options) => {
-    return this.accountRepository.query(options)
-  }
-
-  update = async(data) => {
-    return this.accountRepository.update(data)
+    super(context, logger, new AccountRepository(context, logger))
   }
 }
 
