@@ -68,19 +68,39 @@ const saveTokenToRedis = async (context, logger, token) => {
   }
 } */
 const getSalesforceConfig = async () => {
-  const currentSalesforceEnvironment = await baas.redis.get(
-    "currentSalesforceEnvironment"
-  );
-  const { loginUrl, instanceUrl, clientId, clientSecret, userName, password } =
-    JSON.parse(currentSalesforceEnvironment || {});
-  return {
-    loginUrl,
-    instanceUrl,
-    clientId,
-    clientSecret,
-    userName,
-    password,
-  };
+  try {
+    const currentSalesforceEnvironment = await baas.redis.get(
+      "currentSalesforceEnvironment"
+    );
+    const { loginUrl, instanceUrl, clientId, clientSecret, userName, password } =
+      JSON.parse(currentSalesforceEnvironment || {});
+    return {
+      loginUrl,
+      instanceUrl,
+      clientId,
+      clientSecret,
+      userName,
+      password,
+    };
+  } catch(error) {
+    // 如果从redis加载失败，则直接从数据库中加载
+    const { loginUrl, instanceUrl, clientId, clientSecret, userName, password } = await application.data
+      .object('salesforceEnvironment')
+      .select(['loginUrl', 'instanceUrl', 'clientId', 'clientSecret', 'userName', 'password', 'isCurrentEnv'])
+      .where({
+        isCurrentEnv: true,
+      })
+      .findOne() 
+      return {
+        loginUrl,
+        instanceUrl,
+        clientId,
+        clientSecret,
+        userName,
+        password,
+      }; 
+  }
+
 };
 
 module.exports = {
