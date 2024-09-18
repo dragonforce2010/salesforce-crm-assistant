@@ -1,0 +1,6 @@
+{
+  "params": {
+    "soql": "select Id, Name from Account"
+  },
+  "context": {}
+}

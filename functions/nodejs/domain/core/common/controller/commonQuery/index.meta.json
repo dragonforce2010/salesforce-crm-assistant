@@ -1,0 +1,21 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg5lcegcmfi",
+  "apiName": "commonQuery",
+  "label": {
+    "zh_CN": "通用查询",
+    "en_US": "通用查询"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [{
+    "key": "soql",
+    "type": "Text",
+    "required": true,
+    "label": "soql"
+  }],
+  "output": []
+}

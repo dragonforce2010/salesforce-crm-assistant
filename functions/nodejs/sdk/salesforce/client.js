@@ -36,6 +36,10 @@ class Client {
     }
   }
 
+  async query(soql){
+    return this.conn.query(soql)
+  }
+
   async create(objectApiName, data) {
     try {
       return await this.conn.sobject(objectApiName).create(data);
