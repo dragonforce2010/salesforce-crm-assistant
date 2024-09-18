@@ -18,6 +18,10 @@ class BaseRepository {
   update = async(data) => {
     return this.client.update(this.tableName, data)
   }
+
+  create = async(data) => {
+    return this.client.create(this.tableName, data)
+  }
 }
 
 module.exports = {

@@ -1,9 +1,9 @@
 {
-  "apiID": "salesforceCrmAssistant__c__function_aadg5jgmb5obg",
-  "apiName": "updateAccount",
+  "apiID": "salesforceCrmAssistant__c__function_aadg5kjf5ugmw",
+  "apiName": "createFollowupNote",
   "label": {
-    "zh_CN": "客户服务-更新客户",
-    "en_US": "客户服务-更新客户"
+    "zh_CN": "跟进记录服务-创建跟进",
+    "en_US": "跟进记录服务-创建跟进"
   },
   "description": {
     "zh_CN": "自定义函数",
@@ -14,8 +14,8 @@
   "input": [{
     "key": "data",
     "type": "JSON",
-    "required": true,
-    "label": "更新数据"
+    "label": "数据",
+    "required": true
   }],
   "output": []
 }

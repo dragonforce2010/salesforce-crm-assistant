@@ -1,0 +1,12 @@
+{
+  "params": {
+    "data": {
+      "Description": "今天跟进了一家客户，叫做智联科技，我们演示了产品，对方很感兴趣",
+      "NextStep__c": "约对方高层见面，进一步推进合作",
+      "WhatId": "006Qy000007w03eIAA",
+      "ActivityDateTime": "2024-07-30T10:13:23.000Z",
+      "DurationInMinutes": 2
+    }
+  },
+  "context": {}
+}

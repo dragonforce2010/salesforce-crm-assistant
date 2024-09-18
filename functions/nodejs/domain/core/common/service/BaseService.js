@@ -16,6 +16,10 @@ class BaseService {
   update = async(data) => {
     return this.repository.update(data)
   }
+
+  create = async(data) => {
+    return this.repository.create(data)
+  }
 }
 
 module.exports = {
