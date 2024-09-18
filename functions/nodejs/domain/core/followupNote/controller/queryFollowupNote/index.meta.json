@@ -1,0 +1,21 @@
+{
+  "apiID": "salesforceCrmAssistant__c__function_aadg5j6gzugea",
+  "apiName": "queryFollowupNote",
+  "label": {
+    "zh_CN": "跟进记录服务-查询跟进",
+    "en_US": "跟进记录服务-查询跟进"
+  },
+  "description": {
+    "zh_CN": "自定义函数",
+    "en_US": "Custom Function"
+  },
+  "longTaskMode": false,
+  "frontendSDKInvokable": true,
+  "input": [{
+    "key": "options",
+    "type": "JSON",
+    "label": "查询选项",
+    "required": true
+  }],
+  "output": []
+}
